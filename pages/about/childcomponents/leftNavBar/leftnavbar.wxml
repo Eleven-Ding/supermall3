@@ -1,0 +1,23 @@
+<!--pages/about/childcomponents/leftNavBar/leftnavbar.wxml-->
+<!-- <text>pages/about/childcomponents/leftNavBar/leftnavbar.wxml</text> -->
+
+<view class='left-nav'>
+	<view class='item {{index===currentIndex?"active":""}}' wx:for="{{list}}" wx:key="index" bindtap="tabClick" data-index="{{index}}">{{item.title}}</view>
+</view>
+
+<scroll-view class="right-box" scroll-y="true">
+	<view class="top">
+
+		<view wx:for="{{catelist}}" wx:key="{{index}}" class='right-item'>
+			<image src="{{item.image}}" mode="widthFix"></image>
+			<text>{{item.title}}</text>
+		</view>
+
+	</view>
+
+	<d-tab-control InfoList="{{type}}" bind:tabClick="dtabclick" />
+	<view class="goods">
+		<d-goods-item wx:for="{{categoods}}" class="goods-item" goodsInfo="{{item}}" bind:goodsClick="goodsClick" wx:key="index" />
+	</view>
+
+</scroll-view>

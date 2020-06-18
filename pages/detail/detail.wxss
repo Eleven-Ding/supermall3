@@ -1,0 +1,42 @@
+/* pages/detail/detail.wxss */
+.middle{
+  display: flex;
+  font-size: 25rpx;
+  align-items: center;
+  height: 88rpx;
+}
+.item{
+  flex: 1;
+}
+.left image{
+width: 45rpx;
+margin-top: 20rpx;
+}
+.active{
+  color:red;
+}
+.swiper{
+ margin-top: 88rpx;
+}
+.d-swiper{
+  height: 550rpx;
+}
+.goods{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: space-around;
+  margin-bottom: 98rpx;
+}
+.goods-item{
+  width: 48%;
+  position: relative;
+  margin-top: 16rpx;
+}
+.foryou{
+  height: 60rpx;
+  line-height: 60rpx;
+  border-left: 2px solid #ff5777;
+  color: #ff5777;
+}

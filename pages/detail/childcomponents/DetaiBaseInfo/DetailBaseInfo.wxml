@@ -1,0 +1,27 @@
+<!--pages/detail/childcomponents/DetaiBaseInfo/DetailBaseInfo.wxml-->
+<!-- <text>pages/detail/childcomponents/DetaiBaseInfo/DetailBaseInfo.wxml</text> -->
+<view class="baseInfo">
+	<view class="info-title">{{goods.title}}</view>
+	<view class="info-price">
+		<text class="n-price">{{goods.newPrice}}</text>
+		<text class="o-price">{{goods.oldPrice}}</text>
+		<text class="discount">{{goods.discount}}</text>
+	</view>
+
+	<view class="info-other">
+		<text>{{goods.columns[0]}}</text>
+		<text>{{goods.columns[1]}}</text>
+		<text>{{goods.services[goods.services.length-1].name}}</text>
+	</view>
+
+	<view class="info-service">
+		<block class="info-service-item" wx:for="{{goods.services}}" wx:key="index">
+			<block wx:if="{{index!==0}}">
+				<view class="service-item">
+					<image src="{{item.icon}}" mode="widthFix"></image>
+					<text>{{item.name}}</text>
+				</view>
+			</block>
+		</block>
+	</view>
+</view>

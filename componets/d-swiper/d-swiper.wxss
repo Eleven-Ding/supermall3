@@ -1,0 +1,4 @@
+/* componets/d-swiper/d-swiper.wxss */
+.swiper image{
+width: 100%;
+}

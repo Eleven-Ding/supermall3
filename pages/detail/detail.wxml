@@ -1,0 +1,40 @@
+<!--pages/detail/detail.wxml-->
+<!-- <text>pages/detail/detail.wxml</text> -->
+<!-- 1.导航栏 -->
+<navbar>
+	<view class="left" slot="left" bindtap="backHome">
+		<image src="/assets/img/common/back.svg" mode="widthFix"></image>
+	</view>
+	<view class="middle" slot="middle">
+		<view wx:for="{{navList}}" wx:key="{{index}}" bindtap="changeIndex" data-index="{{index}}" class='item {{currentIndex==index?"active":""}}'>
+			{{item}}
+		</view>
+	</view>
+</navbar>
+<!--2.轮播图 -->
+<view class="swiper">
+	<d-swiper list="{{TopImage}}" my-class="d-swiper"></d-swiper>
+</view> 
+
+<!-- 3.商品详情 -->
+<detail-base-info goods="{{goods}}" />
+<!-- 4.店铺信息 -->
+<detail-shop-info shopInfo="{{shop}}" />
+<!-- 5.商品图片展示 -->
+<detail-goods-info detailInfo="{{detailInfo}}" bind:imageLoad="imageLoad" />
+<!-- 6.商品参数展示 -->
+<detail-params id='params' shopParamInfo="{{shopParamsInfo}}" />
+<!-- 7.商品的评论 -->
+<detail-comment id='comment' commentInfo="{{goodsComment}}" />
+<!-- 8.商品的推荐  这里使用之前的goodslist-->
+<view class='foryou'>
+	为您推荐
+</view>
+<view class="goods" id='commend'>
+	<goods-list class="goods-item" wx:for="{{commendInfo}}" wx:key="index" goodsInfo="{{item}}" />
+</view>
+<!-- 9.底部购物车栏 -->
+<detail-bottom bind:addcart="addcart" />
+
+<!-- 10.回到顶部 -->
+<back-top wx:if="{{isShow}}" bind:backTop="backTop"  />

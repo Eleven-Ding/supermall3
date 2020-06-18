@@ -1,0 +1,18 @@
+<!--pages/cart/childcomponents/cartbottom/cartbottom.wxml-->
+<!-- <text>pages/cart/childcomponents/cartbottom/cartbottom.wxml</text> -->
+<view class="bottom">
+	<view class='icon {{isSelectAll?"active":""}}' bindtap="changeSelectAll">
+		<image src="/assets/img/cart/check.png" mode="widthFix"></image>
+    <text>全选</text>
+	</view>
+	<view class='sum'>
+		<text>合计:</text>
+		<text>￥{{sum}}元</text>
+	</view>
+
+	<view class='pay'> 
+		<view>
+			去结算({{count}})
+		</view>
+	</view>
+</view>

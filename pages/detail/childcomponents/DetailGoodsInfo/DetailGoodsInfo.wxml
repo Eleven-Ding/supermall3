@@ -1,0 +1,11 @@
+<!--pages/detail/childcomponents/DetailGoodsInfo/DetailGoodsInfo.wxml-->
+<!-- <text>pages/detail/childcomponents/DetailGoodsInfo/DetailGoodsInfo.wxml</text> -->
+  <view class="detailgoodsinfo" wx:if="{{Object.keys(detailInfo).length !== 0}}">
+    <view class="des">{{detailInfo.desc}}</view>
+    <view class="result">
+      <view class="key">{{detailInfo.detailImage[0].key}}~</view>
+      <view class="photolist" wx:for="{{detailInfo.detailImage[0].list}}">
+        <image src="{{item}}" alt="" style="width:100%" mode="widthFix" bindload="imageLoad"></image>
+      </view>
+    </view>
+  </view>

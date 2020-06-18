@@ -1,0 +1,63 @@
+<!--pages/profile/profile.wxml-->
+<!-- <text>pages/profile/profile.wxml</text>
+ -->
+   <view class="user-info">
+    <view class="user">
+      <image src="/assets/img/profile/user.svg" class="picture" alt="" mode="widthFix" />
+      <view class="login">
+        <view>登录/注册</view>
+        <view class="bold">
+          <image src="assets/img/profile/phone.svg" mode="widthFix" />
+          <text>暂无绑定手机号</text>
+        </view>
+      </view>
+      <view class="go">
+        <image src="/assets/img/profile/arrow_right.svg" alt="" mode="widthFix" />
+      </view>
+    </view>
+
+    <view class="info">
+      <view>
+        <text class="count">0.00</text>
+        <text>元</text>
+        <view class="text">我的余额</view>
+      </view>
+      <view>
+        <text class="count">0</text>
+        <text>个</text>
+        <view class="text">我的优惠</view>
+      </view>
+      <view>
+        <text class="count">0</text>
+        <text>分</text>
+        <view class="text">我的积分</view>
+      </view>
+    </view>
+
+    <view class="middle">
+      <view>
+        <image src="/assets/img/profile/email.png" alt="" mode="widthFix" />
+        <text>我的消息</text>
+      </view>
+      <view>
+        <image src="/assets/img/profile/tickt.png" alt="" mode="widthFix" />
+        <text>积分商城</text>
+      </view>
+      <view>
+        <image src="/assets/img/profile/vip.png" alt="" mode="widthFix" />
+        <text>会员卡</text>
+      </view>
+    </view>
+
+    <view class="foot">
+      <view >
+        <image src="/assets/img/profile/cart.png" alt="" mode="widthFix" />
+        <text>我的购物车</text>
+      </view>
+      <view>
+        <image src="/assets/img/profile/download.png" alt="" mode="widthFix" />
+        <text>下载购物app</text>
+      </view>
+    </view>
+
+  </view>

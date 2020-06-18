@@ -1,0 +1,44 @@
+/* pages/detail/childcomponents/DetailParams/DetailParams.wxss */
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.item text {
+  flex: 1;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.item1 {
+  display: flex;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 10rpx 0;
+  align-items: center;
+}
+
+.item1 text {
+  font-size: 30rpx;
+
+}
+
+.box2 {
+  margin-top: 20rpx;
+}
+
+.key {
+  flex: 1.6;
+  color: #ff5777;
+  text-align: center;
+}
+
+.value {
+  flex: 6;
+  text-align: left;
+}
+.desc{
+  font-size: 24rpx;
+  color: rgb(225, 226, 223);
+}

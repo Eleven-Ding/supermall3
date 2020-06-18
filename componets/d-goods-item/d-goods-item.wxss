@@ -1,0 +1,28 @@
+/* componets/d-goods-item/d-goods-item.wxss */
+
+.goodsitem image{
+  width: 100%;
+  padding: 4rpx;
+
+}
+.goodsitem{
+  text-align: center;
+}
+.goodsitem view {
+
+  font-size: 28rpx;
+  width: 100%;
+  line-height: 36rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.goodsitem text {
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.price {
+  color: rgba(255, 0, 121, 0.78);
+}

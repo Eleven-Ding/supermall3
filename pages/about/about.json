@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "left-nav-bar":"./childcomponents/leftNavBar/leftnavbar"
+  },
+  "navigationBarTitleText": "商品分类"
+  
+}

@@ -1,0 +1,113 @@
+/* pages/detail/childcomponents/DetailShopInfo/DetaiShopInfo.wxss */
+.shopInfo {
+  margin-top: 30rpx;
+  padding: 0 16rpx;
+  border-bottom: 10rpx solid #f2f5f8;
+}
+
+/*对图片店铺名进行编辑*/
+.shopTitle {
+  display: flex;
+  margin: 30rpx 0;
+}
+
+.shopLogo image {
+  border: 2rpx solid #999999;
+  width: 100rpx;
+  border-radius: 50%;
+}
+
+.shopName {
+  font-size: 40rpx;
+  color: #999999;
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+}
+
+/*对下面的信息进行编辑*/
+.shopMes {
+  display: flex; /*使用flex布局*/
+  justify-content: space-around;
+  align-items: center;
+  height: 200rpx;
+}
+
+.left, .center, .right {
+  text-align: center;
+  padding: 0 20rpx;
+}
+
+.center {
+  border-right: 2rpx solid rgba(191, 191, 191, 0.65);
+}
+
+.shopMes .count {
+  font-size: 36rpx;
+  margin-bottom: 10rpx;
+  color: #454545;
+}
+
+.shopMes .text {
+  font-size: 24rpx;
+}
+
+/*现在是右边的评价*/
+.Info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+
+}
+
+.right {
+  margin-top: -20rpx;
+}
+
+.Info text {
+  margin-left: 14rpx;
+}
+
+.Info .active1 {
+  color: #00b100;
+
+}
+
+.Info .active2 {
+  color: red;
+}
+
+.Info .Active1 {
+  background-color: #00b000;
+
+  color: white;
+}
+
+.Info .Active2 {
+  background-color: #cd0000;
+  color: #ffffff;
+}
+.active1{
+color: green;
+}
+.active2{
+  color: red;
+}
+.Active1{
+  background-color: greenyellow;
+  color: white;
+}
+.Active2{
+  background-color: red;
+  color: white;
+}
+.entry{
+  padding: 10rpx 30rpx;
+  display: inline-block;
+  background-color: rgba(128, 128, 128, 0.275);
+  color: white;
+  left: 50%;
+  border-radius: 10rpx;
+  position: relative;
+  transform: translate(-50%);
+}

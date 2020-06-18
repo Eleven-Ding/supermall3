@@ -1,0 +1,10 @@
+<!--componets/d-tab-control/d-tab-control.wxml-->
+<!-- <text>componets/d-tab-control/d-tab-control.wxml</text> -->
+<view class="tab-control" > 
+    <view class='tab-control-item  {{currentIndex==index?"active":""}}'
+    wx:for="{{InfoList}}" 
+    wx:key="{{index}}" 
+    bindtap="changeIndex" data-index="{{index}}"  data-title="{{item}}">
+    <text> {{item}}</text>
+    </view>
+</view>

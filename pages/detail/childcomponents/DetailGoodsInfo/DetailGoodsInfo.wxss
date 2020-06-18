@@ -1,0 +1,12 @@
+/* pages/detail/childcomponents/DetailGoodsInfo/DetailGoodsInfo.wxss */
+.detailgoodsinfo {
+  margin-top: 40rpx;
+}
+
+.des{
+  font-size: 28rpx;
+  padding: 20rpx 6rpx;
+}
+.key{
+  text-align: center;
+}

@@ -1,0 +1,4 @@
+/* pages/cart/cart.wxss */
+.cart-list{
+  margin-bottom: 70rpx;
+}

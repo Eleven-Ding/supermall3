@@ -1,0 +1,33 @@
+<!--pages/home/home.wxml-->
+<!-- 点击回到顶部 -->
+<d-backTop wx:if="{{PositionY>1000}}" bind:backTop="backTop" />
+<d-tab-control InfoList="{{InfoList}}" bind:tabClick='tabClick1' 
+ id="tab2" 
+ style="display:{{!isFixed?'none':''}}"   />
+<!-- 1.展示轮播图 -->
+<d-swiper  list="{{banners}}" myclass='d-swiper' />
+<!-- 2.推荐数据的展示 -->
+<view class='recommend'>
+  <block wx:for="{{recommend}}" wx:key="{{index}}">
+    <view class="recommend-item">
+     <image src="{{item.image}}" widthFix="true" bindload="handImageLoad"></image>
+     <text>{{item.title}}</text>
+    </view>
+  </block>
+</view>
+<!--3.展示本周流行 -->
+<view class="popular">
+  <image src="/assets/img/home/recommend_bg.jpg" mode="widthFix">
+  </image>
+</view>
+ 
+<!-- 4.tab-control -->
+<d-tab-control InfoList="{{InfoList}}" bind:tabClick='tabClick' id="tab1" />
+
+<!-- 5.展示商品数据 -->
+<view class="goods">
+<!-- 把下面的全部抽成自定义组件 -->
+<d-goods-item
+ wx:for="{{goods[currentType].list}}" 
+ class="goods-item" goodsInfo="{{item}}"  bind:goodsClick="goodsClick"  />
+</view>

@@ -1,0 +1,24 @@
+<!--pages/cart/childcomponents/cartitem/cart-item.wxml-->
+<!-- <text>pages/cart/childcomponents/cartitem/cart-item.wxml</text> -->
+<view class='cart-item'>
+	<view class="dsy">
+		<image class='select {{product.isSelect?"active":""}}' src="/assets/img/cart/check.png" mode="widthFix" bindtap="changeselect"> </image>
+	</view>
+	<view class="item-img">
+		<image src="{{product.image}}" alt="商品图片" mode="widthFix"></image>
+	</view>
+
+	<view class="item-info">
+		<view class="item-title">{{product.title}}</view>
+		<view class="item-desc">商品描述: {{product.desc}}</view>
+		<view class="info-bottom">
+			<view class="item-price left">￥{{product.price}}</view>
+			<view class="item-count right">
+				<button class="sub" disabled="{{product.count<=1}}" bindtap="sub">-</button>
+				<text>x{{product.count}}</text>
+				<button class="add" bindtap="add">+</button>
+			</view>
+		</view>
+	</view>
+
+</view>

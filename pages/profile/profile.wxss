@@ -1,0 +1,103 @@
+/* pages/profile/profile.wxss */
+.user {
+  background-color:rgb(240, 240, 240);
+  display: flex;
+  background-color: #ff5777;
+  padding: 20rpx 30rpx;
+  height: 160rpx;
+}
+
+.picture {
+  width: 55px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.login {
+  flex: 2;
+  margin-left: 30rpx;
+  color: #efefef;
+}
+
+.login view:nth-child(1) {
+  font-size: 36rpx;
+}
+
+.login view:nth-child(2) {
+  font-size: 28rpx;
+  margin-top: 8rpx;
+}
+
+.go {
+  flex: 1;
+  text-align: right;
+}
+
+.go image {
+  width: 70rpx;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 30rpx;
+  border-bottom: 26rpx solid #ececec;
+}
+
+.info view {
+  text-align: center;
+}
+
+.middle view:last-child {
+  border-bottom: none;
+}
+
+.info .count {
+  color: orange;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.info .text {
+  margin-top: 10rpx;
+}
+
+.middle image {
+  width: 40rpx;
+  margin-right: 12rpx;
+}
+
+.middle view {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 0 30rpx;
+}
+
+.middle {
+  border-bottom: 26rpx solid #ececec;
+}
+
+.foot image {
+  width: 40rpx;
+  margin-right: 12rpx;
+}
+
+.foot view {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: 2rpx solid #e4e4e4;
+  padding: 0 30rpx;
+}
+
+.foot view:last-child {
+  border-bottom: none;
+}
+.bold{
+  display: flex;
+}
+.bold image{
+  width: 30rpx;
+}

@@ -1,0 +1,66 @@
+/* pages/about/childcomponents/leftNavBar/leftnavbar.wxss */
+.active {
+  color: #ff5777;
+  background-color: white;
+  border-left: 2px solid #ff5777;
+}
+
+.left-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 40rpx;
+  width: 160rpx;
+  background-color: rgb(251, 251, 251);
+  color: rgb(104, 100, 100);
+}
+
+.item {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-box {
+  width: calc(100% - 160rpx);
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+.top{
+  display: flex;
+  flex-wrap: wrap;
+}
+.right-item{
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 25rpx;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+}
+.right-item image{
+  width: 100%;
+  border-radius: 50%;
+}
+.goods{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: space-around;
+}
+.goods-item{
+  width: 48%;
+  position: relative;
+  margin-top: 16rpx;
+}

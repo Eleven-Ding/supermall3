@@ -1,0 +1,61 @@
+/* pages/detail/childcomponents/DetaiBaseInfo/DetailBaseInfo.wxss */
+/* 1 全部来一个padding */
+.baseInfo {
+  margin-top: 15px;
+  padding: 0 8px;
+  color: #999;
+  border-bottom: 5px solid #f2f5f8;
+}
+
+.info-title {
+  color: #222
+}
+
+.info-price {
+  margin-top: 10px;
+}
+
+.info-price .n-price {
+  font-size: 48rpx;
+  color: #ff5777;
+}
+
+.info-price .o-price {
+  font-size: 26rpx;
+  margin-left:10rpx;
+  text-decoration: line-through;
+}
+
+.info-price .discount {
+  font-size: 24rpx;
+  padding: 4rpx 10rpx;
+  color: white;
+  background-color: #ff5777;
+  border-radius: 16rpx;
+  margin-left: 10rpx;
+
+  /*让元素上浮一些: 使用相对定位即可*/
+  position: relative;
+  top: -8px;
+}
+
+.info-other {
+  margin-top: 30rpx;
+  line-height: 60rpx;
+  display: flex;
+  font-size: 30rpx;
+  border-bottom: 1px solid rgba(100,100,100,.1);
+  justify-content: space-between;
+}
+.info-service{
+  display: flex;
+  font-size: 26rpx;
+  justify-content: space-between;
+  line-height: 120rpx;
+  text-align: center;
+}
+.info-service image{
+  width: 28rpx;
+  position: relative;
+  top: 4rpx;
+}

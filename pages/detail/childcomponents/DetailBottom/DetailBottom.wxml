@@ -1,0 +1,26 @@
+<!--pages/detail/childcomponents/DetailBottom/DetailBottom.wxml-->
+<!-- <text>pages/detail/childcomponents/DetailBottom/DetailBottom.wxml</text> -->
+<view class="bottom">
+	<view class="left">
+		<view class="one item" >
+			<image src="/assets/img/detail/service.png" mode="widthFix"></image>
+			<view>客服</view>
+		</view>
+		<view class="two item"> 
+			<image src="/assets/img/detail/store.png" mode="widthFix"></image>
+			<view>店铺</view>
+		</view>
+		<view class="three item">
+			<image src="/assets/img/detail/love.png" mode="widthFix"></image>
+			<view>收藏</view>
+		</view>
+	</view>
+
+	<view class="middle" bindtap="addcart">
+		加入购物车
+	</view>
+
+	<view class="right">
+		购买
+	</view>
+</view>

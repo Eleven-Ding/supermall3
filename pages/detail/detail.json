@@ -1,0 +1,16 @@
+{
+  "usingComponents": {
+    "navbar":"/componets/d-navbar/d-navbar",
+    "d-swiper":"/componets/d-swiper/d-swiper",
+    "detail-base-info":"./childcomponents/DetaiBaseInfo/DetailBaseInfo",
+    "detail-shop-info":"./childcomponents/DetailShopInfo/DetaiShopInfo",
+    "detail-goods-info":"./childcomponents/DetailGoodsInfo/DetailGoodsInfo",
+    "detail-params":"./childcomponents/DetailParams/DetailParams",
+    "detail-comment":"./childcomponents/DetailComment/DetailComment",
+    "goods-list":"/componets/d-goods-item/d-goods-item",
+    "detail-bottom":"./childcomponents/DetailBottom/DetailBottom",
+    "back-top":"/componets/d-backTop/d-backTop"
+  },
+  "navigationBarTitleText": "商品详情" 
+
+}

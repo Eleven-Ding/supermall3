@@ -1,0 +1,53 @@
+/* pages/detail/childcomponents/DetailBottom/DetailBottom.wxss */
+.bottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  height: 98rpx;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex: 3;
+  justify-content: space-around;
+  font-size: 25rpx;
+}
+
+.left image {
+  width: 50rpx;
+}
+
+.left .item {
+  text-align: center;
+}
+
+.two view {
+  margin-top: 8rpx;
+}
+
+.three view {
+  margin-top: 10rpx;
+}
+
+.middle {
+  flex: 1.5;
+  justify-content: center;
+  background-color: rgba(252, 252, 27, 0.871);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  flex: 1;
+  justify-content: center;
+  background-color: #ff5777;
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}

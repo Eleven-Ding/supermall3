@@ -1,0 +1,16 @@
+/* componets/d-tab-control/d-tab-control.wxss */
+.tab-control{
+  display: flex;
+  padding: 10rpx;
+}
+.tab-control-item{
+  flex: 1;
+  text-align: center;
+}
+.active{
+  color: #ff5777;
+}
+.active text{
+  border-bottom:6rpx solid #ff5777 ;
+  padding: 2rpx 10rpx;
+}

@@ -1,0 +1,28 @@
+<!--pages/detail/childcomponents/DetailComment/DetailComment.wxml-->
+<!-- <text>pages/detail/childcomponents/DetailComment/DetailComment.wxml</text> -->
+
+<view class="comment">
+      <view class="Info-header">
+        <view class="header-title">用户评价</view>
+        <view class="head-more">更多</view>
+      </view>
+
+    <view class="info-user">
+      <image src="{{commentInfo.user.avatar}}"  mode="widthFix" alt=""></image>
+      <text>{{commentInfo.user.uname}}</text>
+    </view>
+
+
+   <view class="info-detail" wx:if="{{Object.keys(commentInfo).length!==0}}">
+      <text>{{commentInfo.content}}</text>
+      <view class="info-other">
+        <text class="date">{{commentInfo.created}} </text>
+        <text>{{commentInfo.style}}</text>
+      </view>
+    </view>
+
+    <view class="info-imgs"  wx:if="{{Object.keys(commentInfo).length!==0}}">
+      <image wx:for="{{commentInfo.images}}" src="{{item}}"  wx:key="index"></image>
+    </view>
+
+</view>

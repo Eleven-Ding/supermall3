@@ -1,0 +1,9 @@
+<!--componets/d-goods-item/d-goods-item.wxml-->
+<!-- <text>componets/d-goods-item/d-goods-item.wxml</text> -->
+<view class='goodsitem'>
+  <image lazy-load="true" src="{{goodsInfo.show.img||goodsInfo.image||goodsInfo.img}}" mode="widthFix" bindtap="goodsClick"></image>
+    <view>{{goodsInfo.title}}</view>
+    <text class="price">￥{{goodsInfo.price}}</text>
+    <text class="collect"> ☆{{goodsInfo.cfav}}</text>
+</view> 
+ 

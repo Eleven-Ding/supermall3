@@ -1,0 +1,5 @@
+<!--componets/d-backTop/d-backTop.wxml-->
+<!-- <text>componets/d-backTop/d-backTop.wxml</text> -->
+<view class="backTop" bindtap="backTop">
+  <image src="/assets/img/common/top.png" mode="widthFix"></image>
+</view>

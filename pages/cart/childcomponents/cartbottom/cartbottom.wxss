@@ -1,0 +1,45 @@
+/* pages/cart/childcomponents/cartbottom/cartbottom.wxss */
+.bottom {
+  display: flex;
+  position: fixed;
+  background-color: rgb(235, 235, 235);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.icon {
+  display: inline-block;
+  padding-top: 10rpx;
+  margin-left: 10rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6rpx;
+  flex: 1.5;
+}
+
+.icon image {
+  border-radius: 50%;
+  width: 40rpx;
+}
+.icon text{
+  font-size: 35rpx;
+}
+
+.sum {
+  flex: 4;
+  text-align: center;
+  font-size: 35rpx;
+}
+
+.pay {
+  flex: 2;
+  background-color: orangered;
+  text-align: center;
+  color: white;
+}
+.active image{
+  background-color: #ff5777;
+}

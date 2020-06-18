@@ -1,0 +1,38 @@
+<!--pages/detail/childcomponents/DetailShopInfo/DetaiShopInfo.wxml-->
+<!-- <text>pages/detail/childcomponents/DetailShopInfo/DetaiShopInfo.wxml</text> -->
+<view class="shopInfo">
+	<view class="shopTitle">
+		<view class="shopLogo">
+			<image src="{{shopInfo.logo}}" mode="widthFix"></image>
+		</view>
+		<text class="shopName">{{shopInfo.name}}</text>
+	</view>
+	<view class="shopMes">
+		<view class="left">
+			<view class="count">{{shopInfo.sell|showsell}}</view>
+			<view class="text">总销量</view>
+		</view>
+
+		<view class="center">
+			<!--在这里加一个有边框-->
+			<view class="count">{{shopInfo.goodsCount}}</view>
+			<view class="text">全部宝贝</view>
+		</view>
+
+		<view class="right">
+			<view class="Info " wx:for="{{shopInfo.score}}" wx:key="index">
+				<text>{{item.name}}</text>
+				<text class='{{item.isBetter?"active1":"active2"}}'>{{item.score}}</text>
+				<!--这里要动态的添加颜色-->
+				<!--高低由isBetter决定-->
+				<text class='{{item.isBetter?"Active1":"Active2"}}'>{{item.isBetter?'高':'低'}}</text> 
+				<!--这里要动态的添加颜色-->
+			</view>
+		</view>
+	</view>
+
+  <view class="entry">
+    <text>进店逛逛</text>
+  </view>
+
+</view>

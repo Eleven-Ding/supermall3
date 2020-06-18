@@ -1,0 +1,17 @@
+<!--pages/detail/childcomponents/DetailParams/DetailParams.wxml-->
+<!-- <text>pages/detail/childcomponents/DetailParams/DetailParams.wxml</text> -->
+<view class="shopparams">
+	<view class="box1">
+		<view wx:for="{{shopParamInfo.rule.tables[0]}}" wx:for-item="father" class='item'>
+			<text wx:for="{{father}}">{{item}}</text>
+		</view>
+	</view>
+	<view class="desc">{{shopParamInfo.rule.disclaimer}}</view>
+	<view class="box2">
+		<view wx:for="{{shopParamInfo.info.set}}"   class='item1'>
+				<text class="key">{{item.key}}</text>
+        <text class="value">{{item.value}}</text>
+		</view>
+	</view>
+
+</view>

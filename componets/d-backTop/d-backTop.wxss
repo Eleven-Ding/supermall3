@@ -1,0 +1,13 @@
+/* componets/d-backTop/d-backTop.wxss */
+.backTop {
+  border-radius: 50%;
+  position: fixed;
+  z-index: 999;
+  right: 30rpx;
+  bottom: 80rpx;
+}
+
+.backTop image {
+  height: 100rpx;
+  width: 100rpx;
+}
